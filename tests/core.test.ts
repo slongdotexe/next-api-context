@@ -8,7 +8,7 @@ import { z } from "zod";
 
 import { createRequest, getDefaultHandler } from "./util";
 
-import { withRequestContext } from "@/index";
+import { withRequestContext } from "@/core";
 
 describe("API context `query` and `body` validation", () => {
   const uri = "https://testdomain.com";
