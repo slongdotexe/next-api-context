@@ -51,6 +51,37 @@ to discuss what you would like to change.
 
 Ideas and requests for features are also welcome, please open an issue to discuss.
 
+## Developing
+
+Use `yarn` to install packages after pulling
+
+### Run Tests
+
+`yarn test`
+
+## Using locally
+
+1. Register the package on your local system
+```bash
+yarn link
+```
+
+2. Create a local Next 13.2+ repo
+3. Link the repo you want to test this library in to the local version
+```bash
+yarn link next-api-context
+```
+4. Add package json entry
+Add this entry to your package json to link the local dependancy
+```
+"next-api-context": "link:./path/to/next-api-context"
+```
+5. Start the dev loader
+```bash
+yarn dev
+```
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
