@@ -59,7 +59,7 @@ Use `yarn` to install packages after pulling
 
 `yarn test`
 
-## Using locally
+### Using locally
 
 1. Register the package on your local system
 ```bash
