@@ -34,7 +34,7 @@ export interface RequestContext<TQuery, TBody> {
 }
 
 export type ContextHandler<TQuery, TBody> = (
-  request: NextRequest,
+  request: Request,
   ctx: RequestContext<TQuery, TBody>
 ) => Promise<Response>;
 

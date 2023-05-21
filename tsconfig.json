@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Default",
-  "include": ["./src"],
+  "include": ["./src", "./tests"],
   "exclude": ["node_modules", "dist"],
   "compilerOptions": {
     "esModuleInterop": true,
@@ -17,6 +17,11 @@
     "declaration": true,
     "declarationMap": true,
     "resolveJsonModule": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@tests/*": ["./tests/*"]
+    },
+    "baseUrl": "./"
   }
 }
